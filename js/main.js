@@ -65,12 +65,12 @@ window.onload = function () {
     body.style.overflow = "hidden";
     header.classList.remove("sticky");
     navbar.classList.add("active");
-    burger.querySelector("img").setAttribute("src", "images/close.svg");
+    burger.querySelector("img").setAttribute("src", "images/close-icon.svg");
   }
   function hideNav() {
     body.style.overflow = "";
     header.classList.add("sticky");
     navbar.classList.remove("active");
-    burger.querySelector("img").setAttribute("src", "images/menu.svg");
+    burger.querySelector("img").setAttribute("src", "images/menu-icon.svg");
   }
 };
