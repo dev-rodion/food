@@ -1,7 +1,11 @@
 window.onload = function () {
+  const body = document.body;
   const header = document.querySelector("header");
   const smoothLinksList = document.querySelectorAll('a[href^="#"]');
   const viewBtnsList = document.querySelectorAll("button[data-block-id]");
+  const navbar = document.querySelector(".navbar");
+  const navbarLinks = document.querySelectorAll(".navbar a");
+  const burger = document.querySelector(".burger");
 
   // Toggle "sticky" class for "header"
   document.addEventListener("scroll", function () {
@@ -9,6 +13,20 @@ window.onload = function () {
       ? header.classList.add("sticky")
       : header.classList.remove("sticky");
   });
+
+  // Work with navbar burger
+  burger.addEventListener("click", function () {
+    const navIsActive = navbar.classList.value.includes("active");
+    !navIsActive ? showNav() : hideNav();
+  });
+
+
+  for (const link of navbarLinks) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      hideNav();
+    });
+  }
 
   // Work with smooth links
   for (const link of smoothLinksList) {
@@ -30,7 +48,6 @@ window.onload = function () {
       const isActive = block.classList.value.includes("active");
       const contentHeight = block.querySelector("div").offsetHeight;
 
-      console.log(isActive);
       if (!isActive) {
         block.style.height = `${contentHeight}px`;
         block.classList.add("active");
@@ -41,5 +58,19 @@ window.onload = function () {
         button.innerHTML = "View All";
       }
     });
+  }
+
+  // Mobile Navbar Functions
+  function showNav() {
+    body.style.overflow = "hidden";
+    header.classList.remove("sticky");
+    navbar.classList.add("active");
+    burger.querySelector("img").setAttribute("src", "images/close.svg");
+  }
+  function hideNav() {
+    body.style.overflow = "";
+    header.classList.add("sticky");
+    navbar.classList.remove("active");
+    burger.querySelector("img").setAttribute("src", "images/menu.svg");
   }
 };

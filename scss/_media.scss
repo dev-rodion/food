@@ -1,0 +1,105 @@
+@media (max-width: 1200px) {
+  section {
+    padding: 100px 50px 0;
+  }
+  header {
+    padding: 40px 50px;
+  }
+  .expert,
+  .testimonials {
+    padding-bottom: 50px;
+  }
+  .contact {
+    margin-bottom: 100px;
+  }
+  .expert .content .box {
+    max-width: 300px;
+    width: calc(50% - 40px);
+  }
+  .expert .content .imgBx {
+    height: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  section {
+    padding: 70px 25px 0;
+  }
+  .row {
+    .col50 {
+      width: 100%;
+    }
+    .imgBx {
+      margin-top: 20px;
+    }
+  }
+  header {
+    padding: 40px 25px;
+  }
+  .banner .content h2 {
+    font-size: 4em;
+  }
+  .menu .content .box,
+  .testimonials .box {
+    max-width: 340px;
+    width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 70px 15px 0;
+  }
+  .burger {
+    display: block;
+  }
+  .menu .content .box {
+    margin: 10px;
+    width: calc(50% - 20px);
+  }
+  .testimonials .box {
+    max-width: 500px;
+    width: 100%;
+  }
+  .menu .content .box .imgBx {
+    height: calc(50vw - 80px);
+  }
+  .expert .content .box {
+    max-width: 100%;
+    width: calc(50% - 40px);
+  }
+  .expert .content .imgBx {
+    height: calc(50vw);
+  }
+  .contactForm {
+    margin: 70px auto 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .banner .content h2 {
+    font-size: 13vw;
+    line-height: 1.1;
+    margin-bottom: 20px;
+  }
+  .menu .content .box {
+    max-width: 300px;
+    width: 100%;
+    .imgBx {
+      height: 250px;
+    }
+  }
+  .expert .content .box {
+    max-width: 250px;
+    width: 100%;
+    .imgBx {
+      height: 340px;
+    }
+  }
+  .testimonials .box {
+    margin: 20px 0;
+  }
+  .contactForm {
+    padding: 50px 20px;
+  }
+}
