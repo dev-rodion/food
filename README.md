@@ -1,2 +1,11 @@
-# sass-practice
-This is webpage about food. Here I practive Sass. 
+# Food Webpage (Sass practice)
+
+Here I practiced Sass.
+
+I used HTML, CSS (Sass) and JavaScript.
+
+Result: https://dev-rodion.github.io/sass-practice/
+
+<br>
+
+I was inspired by this work: https://youtu.be/ac5nmWOkBEY. 
