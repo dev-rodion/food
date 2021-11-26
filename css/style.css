@@ -41,6 +41,17 @@ section {
   font-weight: 400;
 }
 
+.hide {
+  margin: 0;
+  transition: 1s;
+  height: 0px;
+  overflow: hidden;
+}
+
+.hide .content {
+  margin-top: 0;
+}
+
 .row {
   position: relative;
   width: 100%;
@@ -106,6 +117,7 @@ section {
   letter-spacing: 2px;
   transition: 0.5s;
   cursor: pointer;
+  border: none;
 }
 
 .btn:hover {
