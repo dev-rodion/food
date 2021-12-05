@@ -4,7 +4,7 @@ Here I practiced Sass.
 
 I used HTML, CSS (Sass) and JavaScript.
 
-Result: https://dev-rodion.github.io/sass-practice/
+Result: https://dev-rodion.github.io/food/
 
 <br>
 
